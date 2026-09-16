@@ -1,0 +1,138 @@
+/* Colores repetidos del diseño original:
+   #00f0ff: 6 veces
+   #ff007f: 5 veces
+   #ffffff: 4 veces
+   #0a0a12: 2 veces
+   #1a1a2e: 2 veces
+*/
+:root {
+    --cian: #00f0ff;
+    --magenta: #ff007f;
+    --blanco: #ffffff;
+    --fondo: #0a0a12;
+    --superficie: #1a1a2e;
+}
+
+/* Antes, width no incluía padding ni borde.
+   Con border-box, el ancho declarado incluye contenido, padding y borde. */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: var(--fondo);
+    color: var(--blanco);
+}
+
+h2 {
+    color: var(--cian);
+    border-bottom: 2px solid var(--cian);
+}
+
+.texto-centrado {
+    text-align: center;
+}
+
+header {
+    background-color: var(--magenta);
+    padding: 20px;
+}
+
+.titulo-sitio {
+    color: var(--cian);
+    margin: 0;
+}
+
+.eslogan {
+    margin-top: 5px;
+    color: var(--blanco);
+}
+
+nav a {
+    color: var(--blanco);
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--fondo);
+    text-decoration: underline;
+}
+
+nav a:focus {
+    color: var(--fondo);
+    outline: 3px solid var(--cian);
+    outline-offset: 3px;
+}
+
+.contenido-principal {
+    padding: 20px;
+}
+
+.tarjeta {
+    border: 2px solid var(--magenta);
+    padding: 15px;
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+#destacado {
+    background-color: var(--superficie);
+}
+
+.titulo-cian {
+    color: var(--cian);
+}
+
+.titulo-magenta {
+    color: var(--magenta);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 1px solid var(--cian);
+    padding: 8px;
+}
+
+.boton {
+    background-color: var(--cian);
+    color: var(--fondo);
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: var(--blanco);
+}
+
+.boton:focus {
+    background-color: var(--blanco);
+    outline: 3px solid var(--magenta);
+    outline-offset: 3px;
+}
+
+footer {
+    background-color: var(--magenta);
+    color: var(--blanco);
+    padding: 20px;
+}
+
+.footer-linea {
+    margin: 0;
+}
+
+.footer-contacto {
+    margin-top: 5px;
+    color: var(--superficie);
+}
