@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
 </head>
 
 <body>
+
     <header>
         <div class="texto-centrado">
             <h1 class="titulo-sitio">Neon Galaxy Arcade</h1>
@@ -23,29 +25,42 @@
     </header>
 
     <main class="contenido-principal">
+
         <section id="juegos">
             <h2>Zonas de Juego</h2>
 
-            <article class="tarjeta" id="destacado">
-                <h3 class="titulo-cian">Zona Realidad Virtual</h3>
-                <p>Experimenta mundos imposibles con nuestros simuladores 360° y visores de última generación.
-                    <br>La inmersión es total.
-                </p>
-            </article>
+            <div class="contenedor-tarjetas">
 
-            <article class="tarjeta">
-                <h3 class="titulo-magenta">Arcade Retro</h3>
-                <p>Más de 500 títulos clásicos. Revive la era dorada de los videojuegos con nuestras máquinas restauradas.</p>
-            </article>
+                <article class="tarjeta" id="destacado">
+                    <h3 class="titulo-cian">Zona Realidad Virtual</h3>
+                    <p>
+                        Experimenta mundos imposibles con nuestros simuladores 360° y visores de última generación.
+                        <br>La inmersión es total.
+                    </p>
+                </article>
 
-            <article class="tarjeta">
-                <h3 class="titulo-magenta">Arena eSports</h3>
-                <p>PCs de alto rendimiento y consolas de última generación para tus partidas competitivas y torneos.</p>
-            </article>
+                <article class="tarjeta">
+                    <h3 class="titulo-magenta">Arcade Retro</h3>
+                    <p>
+                        Más de 500 títulos clásicos. Revive la era dorada de los videojuegos
+                        con nuestras máquinas restauradas.
+                    </p>
+                </article>
+
+                <article class="tarjeta">
+                    <h3 class="titulo-magenta">Arena eSports</h3>
+                    <p>
+                        PCs de alto rendimiento y consolas de última generación para tus
+                        partidas competitivas y torneos.
+                    </p>
+                </article>
+
+            </div>
         </section>
 
         <section id="horarios">
             <h2>Horarios de Operación</h2>
+
             <table>
                 <thead>
                     <tr>
@@ -54,20 +69,25 @@
                         <th>Cierre</th>
                     </tr>
                 </thead>
+
                 <tbody>
                     <tr>
                         <td>Lunes a Jueves</td>
                         <td>2:00 p. m.</td>
                         <td>11:00 p. m.</td>
                     </tr>
+
                     <tr>
                         <td>Viernes y Sábados</td>
                         <td>2:00 p. m.</td>
                         <td>2:00 a. m.</td>
                     </tr>
+
                     <tr>
                         <td>Domingos y festivos</td>
-                        <td colspan="2" class="texto-centrado">11:00 a. m. a 10:00 p. m.</td>
+                        <td colspan="2" class="texto-centrado">
+                            11:00 a. m. a 10:00 p. m.
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -75,6 +95,7 @@
 
         <section id="eventos">
             <h2>Próximos Eventos</h2>
+
             <ul>
                 <li>Torneo Super Smash Bros Ultimate, miércoles a las 7:00 p. m.</li>
                 <li>Noche de Retro Speedrunning, primer viernes de cada mes</li>
@@ -85,17 +106,22 @@
 
         <section id="contacto">
             <h2>Reserva tu Pase</h2>
+
             <form action="#" method="post">
+
                 <p>
                     <label for="nombre">Gamer Tag / Nombre</label><br>
                     <input type="text" id="nombre" name="nombre" required>
                 </p>
+
                 <p>
                     <label for="correo">Correo electrónico</label><br>
                     <input type="email" id="correo" name="correo" required>
                 </p>
+
                 <p>
                     <label for="asunto">Misión (Asunto)</label><br>
+
                     <select id="asunto" name="asunto">
                         <option value="reserva">Reservar Arena eSports</option>
                         <option value="cumpleanos">Paquete de Cumpleaños</option>
@@ -103,20 +129,33 @@
                         <option value="otro">Otro</option>
                     </select>
                 </p>
+
                 <p>
                     <label for="mensaje">Mensaje</label><br>
                     <textarea id="mensaje" name="mensaje" rows="5" cols="40"></textarea>
                 </p>
+
                 <p>
-                    <button type="submit" class="boton">Enviar Transmisión</button>
+                    <button type="submit" class="boton">
+                        Enviar Transmisión
+                    </button>
                 </p>
+
             </form>
         </section>
+
     </main>
 
     <footer>
-        <p class="footer-linea">Neon Galaxy Arcade &middot; Sector Ciberpunk, Nivel 4 &middot; Metrópolis</p>
-        <p class="footer-contacto">Teléfono: +555 867 5309 &middot; info@neongalaxy.com</p>
+        <p class="footer-linea">
+            Neon Galaxy Arcade &middot; Sector Ciberpunk, Nivel 4 &middot; Metrópolis
+        </p>
+
+        <p class="footer-contacto">
+            Teléfono: +555 867 5309 &middot; info@neongalaxy.com
+        </p>
     </footer>
+
 </body>
+
 </html>
