@@ -5,6 +5,7 @@
    #0a0a12: 2 veces
    #1a1a2e: 2 veces
 */
+
 :root {
     --cian: #00f0ff;
     --magenta: #ff007f;
@@ -13,19 +14,24 @@
     --superficie: #1a1a2e;
 }
 
-/* Antes, width no incluía padding ni borde.
-   Con border-box, el ancho declarado incluye contenido, padding y borde. */
+/* El ancho declarado incluye contenido, padding y borde */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
+/* GRID: estructura general de la página */
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     background-color: var(--fondo);
     color: var(--blanco);
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+    min-height: 100vh;
 }
 
 h2 {
@@ -74,11 +80,23 @@ nav a:focus {
     padding: 20px;
 }
 
+/* FLEXBOX: contenedor de las tres tarjetas */
+.contenedor-tarjetas {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 .tarjeta {
     border: 2px solid var(--magenta);
     padding: 15px;
     margin-bottom: 10px;
-    width: 300px;
+
+    flex: 1 1 250px;
+    min-width: 0;
 }
 
 #destacado {
